@@ -1,0 +1,12 @@
+
+*.sdf
+*.suo
+*.db
+ipch/*
+Debug/*
+Release/*
+JumpAndRun/Debug/*
+JumpAndRun/Release/*
+JumpAndRun/Source - kopia/*
+JumpAndRun/gfx/*.txt
+JumpAndRun/*.exe

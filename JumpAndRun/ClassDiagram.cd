@@ -1,0 +1,575 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="APPLICATION::User" Collapsed="true">
+    <Position X="49.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAgIAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Source\Application.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="APPLICATION::ApplicationState" Collapsed="true">
+    <Position X="30.25" Y="4" Width="1.5" />
+    <InheritanceLine Type="APPLICATION::GAME::RendererUser" ManuallyRouted="true" FixedToPoint="true">
+      <Path>
+        <Point X="29.25" Y="2.312" />
+        <Point X="29.25" Y="3.458" />
+        <Point X="30.688" Y="3.458" />
+        <Point X="30.688" Y="4" />
+      </Path>
+    </InheritanceLine>
+    <InheritanceLine Type="FRAMEWORK::KeyboardListener" ManuallyRouted="true">
+      <Path>
+        <Point X="21.5" Y="1.062" />
+        <Point X="21.5" Y="1.583" />
+        <Point X="31" Y="1.583" />
+        <Point X="31" Y="4" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAQAAEEAgACAAgAAgAAAAAAQgAIAAAAAAAACABAgAAA=</HashCode>
+      <FileName>Source\Application.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="APPLICATION::Application" Collapsed="true">
+    <Position X="20.5" Y="4.75" Width="1.5" />
+    <InheritanceLine Type="APPLICATION::AudioUser" FixedFromPoint="true">
+      <Path>
+        <Point X="24.625" Y="2.312" />
+        <Point X="24.625" Y="4.375" />
+        <Point X="21.25" Y="4.375" />
+        <Point X="21.25" Y="4.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>ACAABCEAAbAAACAIAAAAACAQgAAAAAEBAAIDZBEAAAA=</HashCode>
+      <FileName>Source\Application.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="APPLICATION::MenuState" Collapsed="true">
+    <Position X="30.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAQEAAACAAgAQAgBAAABAgAIiAAQAAAACABEAAAA=</HashCode>
+      <FileName>Source\Application.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="APPLICATION::MainMenuState" Collapsed="true">
+    <Position X="31.25" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAACABAAAAABAAABAAAKICAQAAAAAAAEAAAA=</HashCode>
+      <FileName>Source\Application.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="APPLICATION::OptionsState" Collapsed="true">
+    <Position X="22.5" Y="7.25" Width="1.5" />
+    <InheritanceLine Type="APPLICATION::AudioUser" ManuallyRouted="true" FixedToPoint="true">
+      <Path>
+        <Point X="25" Y="2.312" />
+        <Point X="25" Y="6.521" />
+        <Point X="22.938" Y="6.521" />
+        <Point X="22.938" Y="7.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAACAAAAABABAAABAgAKBCEQAgAAAAAEBAAg=</HashCode>
+      <FileName>Source\Application.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="APPLICATION::NewGameState" Collapsed="true">
+    <Position X="24.5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIABAEAAACAAAAAAABAAABQgAIAAAQAAQAAAAEAAAA=</HashCode>
+      <FileName>Source\Application.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="APPLICATION::LoadGameState" Collapsed="true">
+    <Position X="26.75" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAABCAAEAAAABAAABAgAKACAQAAAAAQAkAAAA=</HashCode>
+      <FileName>Source\Application.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="APPLICATION::GameState" Collapsed="true">
+    <Position X="37.5" Y="7.25" Width="1.5" />
+    <InheritanceLine Type="APPLICATION::ApplicationState" FixedFromPoint="true">
+      <Path>
+        <Point X="31.438" Y="4.82" />
+        <Point X="31.438" Y="5.06" />
+        <Point X="38.25" Y="5.06" />
+        <Point X="38.25" Y="7.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAQACQEAABCAAgAQAABQAAAhgAKACAQBAAACBBAAIAA=</HashCode>
+      <FileName>Source\Application.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="APPLICATION::LevelChoiceState" Collapsed="true">
+    <Position X="29" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgEAAICAAAAAAABAAABAgAKADAQAAAAAAAEAIAA=</HashCode>
+      <FileName>Source\Application.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="APPLICATION::HighScoresState" Collapsed="true">
+    <Position X="33.5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAABAAAAABAAAAAgAAAAAACAAACABEAAAA=</HashCode>
+      <FileName>Source\Application.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="APPLICATION::ControlsState" Collapsed="true">
+    <Position X="35.5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQgAEAAACAAAAAAABAAABAgAKACEQAAAAAAGEAAAA=</HashCode>
+      <FileName>Source\Application.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="APPLICATION::AudioManager" Collapsed="true">
+    <Position X="42.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAgAAAAAAAAAAAAAAACIAAAAAAAChgACABCAAAI=</HashCode>
+      <FileName>Source\Audio.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="APPLICATION::AudioUser" Collapsed="true">
+    <Position X="24.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Source\Audio.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FRAMEWORK::KeyboardListener" Collapsed="true">
+    <Position X="20.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAQCAAEAAAAAAAAAQAAIAAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>Source\Framework.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FRAMEWORK::Keyboard" Collapsed="true">
+    <Position X="49.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAwAAAQAAAAAARAACACAAAAAAAAAIACAAAAAAAAAQAA=</HashCode>
+      <FileName>Source\Framework.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FRAMEWORK::Framework" Collapsed="true">
+    <Position X="18.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAAAAAAAAAAAAAAAAAAQgIgCAACAABDAIAEAAAI=</HashCode>
+      <FileName>Source\Framework.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FRAMEWORK::Message" Collapsed="true">
+    <Position X="42.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAQAAKAABAAA=</HashCode>
+      <FileName>Source\Messages.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FRAMEWORK::MessagesListener" Collapsed="true">
+    <Position X="18.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAA=</HashCode>
+      <FileName>Source\Messages.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FRAMEWORK::MessagesManager" Collapsed="true">
+    <Position X="44" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAAAAAAAAAAQAAACAAAAAAAAAAAA=</HashCode>
+      <FileName>Source\Messages.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="APPLICATION::GAME::Delegate&lt;T&gt;" Collapsed="true">
+    <Position X="47.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAwAAAAAAAAAAAACAAAAAAAAAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>Source\Game.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="APPLICATION::GAME::Timer&lt;T&gt;" Collapsed="true">
+    <Position X="47.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAQAAAAAAAAAAIAAAAEAAAAAAAAAAQQI=</HashCode>
+      <FileName>Source\Game.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="APPLICATION::GAME::Background" Collapsed="true">
+    <Position X="44" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQQAAAAABAAAAAAAAAAAAEAAAAAAAEAAgAAAABAAgAA=</HashCode>
+      <FileName>Source\Game.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="APPLICATION::GAME::GraphicsSender" Collapsed="true">
+    <Position X="26.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAEAAAAAAAAAAAAEAAAgAAABAAAA=</HashCode>
+      <FileName>Source\Game.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="APPLICATION::GAME::Pair" Collapsed="true">
+    <Position X="45.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAwAIAAAAAAAAAAAAABAAAFIAAAAAAAAAAA=</HashCode>
+      <FileName>Source\Game.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="APPLICATION::GAME::RendererUser" Collapsed="true">
+    <Position X="28.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Source\Game.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="APPLICATION::GAME::Game" Collapsed="true">
+    <Position X="26.25" Y="4.25" Width="1.5" />
+    <InheritanceLine Type="APPLICATION::GAME::RendererUser" ManuallyRouted="true" FixedToPoint="true">
+      <Path>
+        <Point X="29.25" Y="2.312" />
+        <Point X="29.25" Y="3.458" />
+        <Point X="27.312" Y="3.458" />
+        <Point X="27.312" Y="4.25" />
+      </Path>
+    </InheritanceLine>
+    <InheritanceLine Type="APPLICATION::AudioUser" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="25.312" Y="2.312" />
+        <Point X="25.312" Y="3.875" />
+        <Point X="26.625" Y="3.875" />
+        <Point X="26.625" Y="4.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>QYYAEhMAWOKQDgAAACkLgAGMACg2IDEAhQCCABAIwwg=</HashCode>
+      <FileName>Source\Game.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="APPLICATION::GAME::Object" Collapsed="true">
+    <Position X="4" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQCgAAABQAAAAAoEAAAAESACCCAQAAMMQAAgMGNCAE=</HashCode>
+      <FileName>Source\Object.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="APPLICATION::GAME::World" Collapsed="true">
+    <Position X="42.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQCAAAABJAIACEABAIAAGACAAAAAEGAAAAAACAAAAA=</HashCode>
+      <FileName>Source\World.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="APPLICATION::GAME::ObjectBunch" Collapsed="true">
+    <Position X="11" Y="4" Width="1.5" />
+    <InheritanceLine Type="APPLICATION::GAME::Object" FixedFromPoint="true">
+      <Path>
+        <Point X="4.75" Y="3.062" />
+        <Point X="4.75" Y="3.625" />
+        <Point X="11.75" Y="3.625" />
+        <Point X="11.75" Y="4" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Source\Object.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="APPLICATION::GAME::Jumper" Collapsed="true">
+    <Position X="9.25" Y="4" Width="1.5" />
+    <InheritanceLine Type="APPLICATION::GAME::Object" FixedFromPoint="true">
+      <Path>
+        <Point X="4.75" Y="3.062" />
+        <Point X="4.75" Y="3.625" />
+        <Point X="10" Y="3.625" />
+        <Point X="10" Y="4" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAEAAAAAAAAAAAAAAAAABAAAAAQAAAAA=</HashCode>
+      <FileName>Source\Object.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="APPLICATION::GAME::Platform" Collapsed="true">
+    <Position X="7.5" Y="4" Width="1.5" />
+    <InheritanceLine Type="APPLICATION::GAME::Object" FixedFromPoint="true">
+      <Path>
+        <Point X="4.75" Y="3.062" />
+        <Point X="4.75" Y="3.625" />
+        <Point X="8.25" Y="3.625" />
+        <Point X="8.25" Y="4" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Source\Object.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="APPLICATION::GAME::Movable" Collapsed="true">
+    <Position X="2.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAIAAAgAgAAAAAAAAAAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>Source\Object.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="APPLICATION::GAME::FloatingPlatform" Collapsed="true">
+    <Position X="7.25" Y="5.75" Width="1.5" />
+    <InheritanceLine Type="APPLICATION::GAME::Platform" FixedToPoint="true">
+      <Path>
+        <Point X="8.25" Y="4.691" />
+        <Point X="8.25" Y="5.75" />
+      </Path>
+    </InheritanceLine>
+    <InheritanceLine Type="APPLICATION::GAME::Movable" ManuallyRouted="true" FixedFromPoint="true">
+      <Path>
+        <Point X="3" Y="4.812" />
+        <Point X="3" Y="5.144" />
+        <Point X="8" Y="5.144" />
+        <Point X="8" Y="5.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Source\Object.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="APPLICATION::GAME::Enemy" Collapsed="true">
+    <Position X="5.25" Y="7.75" Width="1.5" />
+    <InheritanceLine Type="APPLICATION::GAME::Object" ManuallyRouted="true" FixedFromPoint="true">
+      <Path>
+        <Point X="4.75" Y="3.062" />
+        <Point X="4.75" Y="3.613" />
+        <Point X="15.646" Y="3.613" />
+        <Point X="15.646" Y="7.055" />
+        <Point X="6" Y="7.055" />
+        <Point X="6" Y="7.75" />
+      </Path>
+    </InheritanceLine>
+    <InheritanceLine Type="APPLICATION::GAME::Movable" ManuallyRouted="true" FixedToPoint="true">
+      <Path>
+        <Point X="3" Y="4.812" />
+        <Point X="3" Y="5.132" />
+        <Point X="5.75" Y="5.132" />
+        <Point X="5.75" Y="7.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAAAAAAAAAAAAACAAAAAAIAAAEAkAAAA=</HashCode>
+      <FileName>Source\Object.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="APPLICATION::GAME::Bonus" Collapsed="true">
+    <Position X="12.75" Y="4" Width="1.5" />
+    <InheritanceLine Type="APPLICATION::GAME::Object" ManuallyRouted="true" FixedFromPoint="true">
+      <Path>
+        <Point X="4.75" Y="3.062" />
+        <Point X="4.75" Y="3.636" />
+        <Point X="13.5" Y="3.636" />
+        <Point X="13.5" Y="4" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Source\Object.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="APPLICATION::GAME::Player" Collapsed="true">
+    <Position X="0.5" Y="7.75" Width="1.5" />
+    <InheritanceLine Type="APPLICATION::GAME::Object" ManuallyRouted="true">
+      <Path>
+        <Point X="4.75" Y="3.062" />
+        <Point X="4.75" Y="3.595" />
+        <Point X="1.25" Y="3.595" />
+        <Point X="1.25" Y="7.75" />
+      </Path>
+    </InheritanceLine>
+    <InheritanceLine Type="APPLICATION::GAME::Movable" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="3" Y="4.812" />
+        <Point X="3" Y="5.111" />
+        <Point X="1.625" Y="5.111" />
+        <Point X="1.625" Y="7.75" />
+      </Path>
+    </InheritanceLine>
+    <InheritanceLine Type="FRAMEWORK::KeyboardListener" ManuallyRouted="true" FixedToPoint="true">
+      <Path>
+        <Point X="21.5" Y="1.062" />
+        <Point X="21.5" Y="1.562" />
+        <Point X="0.75" Y="1.562" />
+        <Point X="0.75" Y="7.75" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAAQZEAEAQGQgAAACIEEAAgACAIAIAACMAgADQFQAAA=</HashCode>
+      <FileName>Source\Object.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="APPLICATION::GAME::WorldBuilder" Collapsed="true">
+    <Position X="44" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAAAAAAAAAAAAgAEAAAAIAAAAAAA=</HashCode>
+      <FileName>Source\World.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RENDERER::Particle" Collapsed="true">
+    <Position X="47.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAAACAAgAEAAAAQAAACAABAAAEAAgAAEAAA=</HashCode>
+      <FileName>Source\Particles.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RENDERER::ParticleEmitter" Collapsed="true">
+    <Position X="49.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAABAAAACABAAAQAAAAAAACAAAAAAAgAQBBAAAA=</HashCode>
+      <FileName>Source\Particles.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RENDERER::BitmapFont" Collapsed="true">
+    <Position X="45.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAgAAAAQAAggAAAAgAAAAAACAAAAAAAAAAABAAAEA=</HashCode>
+      <FileName>Source\Renderer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RENDERER::Renderer" Collapsed="true">
+    <Position X="42.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAYAAAgAAFBAAAEgBCEAAACAQAAAEiECgECCAFQCQgA=</HashCode>
+      <FileName>Source\Renderer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RENDERER::Resolution" Collapsed="true">
+    <Position X="44" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAEAIAAA=</HashCode>
+      <FileName>Source\Renderer.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RENDERER::Sprite" Collapsed="true">
+    <Position X="33.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAACAEAEAAAAAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>Source\Sprite.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RENDERER::AnimateSprite" Collapsed="true">
+    <Position X="33.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAIAAAEAAAAAQAAAAAIAAA=</HashCode>
+      <FileName>Source\Sprite.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RENDERER::SurfacesManager" Collapsed="true">
+    <Position X="45.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAAEAAAAAACAAAAAABAAAABAABAAAAA=</HashCode>
+      <FileName>Source\SurfacesManager.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="APPLICATION::HSLine" Collapsed="true">
+    <Position X="49.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Source\Application.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="APPLICATION::ScoresSort" Collapsed="true">
+    <Position X="49.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Source\Application.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="APPLICATION::AudioSettings" Collapsed="true">
+    <Position X="42.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAIAAAAAgAAAA=</HashCode>
+      <FileName>Source\Audio.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="APPLICATION::GAME::SendObjectDesc" Collapsed="true">
+    <Position X="42.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgAAACAAABAAAAAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>Source\Game.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="APPLICATION::GAME::LevelDesc" Collapsed="true">
+    <Position X="42.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAAAAAEEAAAAAAAAAAAAABA=</HashCode>
+      <FileName>Source\Game.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="APPLICATION::GAME::LevelStats" Collapsed="true">
+    <Position X="44" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAAAAAEAABAAAAAAAAAAAQA=</HashCode>
+      <FileName>Source\Game.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="APPLICATION::GAME::Controls" Collapsed="true">
+    <Position X="45.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACAAAAAABAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Source\Object.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="APPLICATION::GAME::BonusDesc" Collapsed="true">
+    <Position X="44" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAAAAAAAAQAAIAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Source\Object.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="MATH::Vec2" Collapsed="true">
+    <Position X="44" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAFAAAAQBACAAAAAAAAAhggAAAAAA=</HashCode>
+      <FileName>Source\Math.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="MATH::Vec3" Collapsed="true">
+    <Position X="45.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABgAQEAAAA=</HashCode>
+      <FileName>Source\Math.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="MATH::Rect" Collapsed="true">
+    <Position X="47.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAICAAAAAAQAhgAAAAAAA=</HashCode>
+      <FileName>Source\Math.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="RENDERER::ParticleEmitterDesc" Collapsed="true">
+    <Position X="45.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAABABAAAAICgAAAAAEAAAAAAAJAgAEAAgAAkAAA=</HashCode>
+      <FileName>Source\Particles.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="RENDERER::GraphicsSettings" Collapsed="true">
+    <Position X="47.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAAAAAQAEAAAAAAAAIAMAAAAAgCAAA=</HashCode>
+      <FileName>Source\Renderer.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Typedef Name="Uint32" Collapsed="true">
+    <Position X="44" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Source\World.cpp</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Typedef Name="MATH::UINT" Collapsed="true">
+    <Position X="42.25" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Source\Math.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

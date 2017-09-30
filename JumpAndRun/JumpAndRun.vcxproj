@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2646A165-3D8C-4461-8B38-667B969BB6B6}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>JumpAndRun</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>NotSet</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>C:\SDKs\audiere-1.9.4-win32\include;C:\SDKs\allegro\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\SDKs\audiere-1.9.4-win32\lib;C:\SDKs\allegro\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>C:\SDKs\audiere-1.9.4-win32\include;C:\SDKs\allegro\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\SDKs\audiere-1.9.4-win32\lib;C:\SDKs\allegro\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ShowIncludes>false</ShowIncludes>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>alleg.lib;audiere.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>-subsystem:windows %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BrowseInformation>true</BrowseInformation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>alleg.lib;audiere.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>-subsystem:windows %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <Bscmake>
+      <PreserveSBR>true</PreserveSBR>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Application\Application.cpp" />
+    <ClCompile Include="Source\Application\ApplicationStates\ControlsState.cpp" />
+    <ClCompile Include="Source\Application\ApplicationStates\GameState.cpp" />
+    <ClCompile Include="Source\Application\ApplicationStates\HighScoresState.cpp" />
+    <ClCompile Include="Source\Application\ApplicationStates\LevelChoiceState.cpp" />
+    <ClCompile Include="Source\Application\ApplicationStates\LoadGameState.cpp" />
+    <ClCompile Include="Source\Application\ApplicationStates\MainMenuState.cpp" />
+    <ClCompile Include="Source\Application\ApplicationStates\MenuState.cpp" />
+    <ClCompile Include="Source\Application\ApplicationStates\NewGameState.cpp" />
+    <ClCompile Include="Source\Application\ApplicationStates\OptionsState.cpp" />
+    <ClCompile Include="Source\Application\User.cpp" />
+    <ClCompile Include="Source\Framework\Audio.cpp" />
+    <ClCompile Include="Source\Framework\Framework.cpp" />
+    <ClCompile Include="Source\Framework\Keyboard.cpp" />
+    <ClCompile Include="Source\Game\Background.cpp" />
+    <ClCompile Include="Source\Game\Enemy.cpp" />
+    <ClCompile Include="Source\Game\Game.cpp" />
+    <ClCompile Include="Source\Game\ObjectPair.cpp" />
+    <ClCompile Include="Source\Game\Platform.cpp" />
+    <ClCompile Include="Source\Game\Player.cpp" />
+    <ClCompile Include="Source\main.cpp" />
+    <ClCompile Include="Source\Framework\Messages.cpp" />
+    <ClCompile Include="Source\Game\Object.cpp" />
+    <ClCompile Include="Source\Renderer\BitmapFont.cpp" />
+    <ClCompile Include="Source\Renderer\Particles.cpp" />
+    <ClCompile Include="Source\Renderer\Renderer.cpp" />
+    <ClCompile Include="Source\Renderer\Sprite.cpp" />
+    <ClCompile Include="Source\Renderer\SurfacesManager.cpp" />
+    <ClCompile Include="Source\Game\World.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\Application\Application.h" />
+    <ClInclude Include="Source\Application\ApplicationState.h" />
+    <ClInclude Include="Source\Application\ApplicationStates\ControlsState.h" />
+    <ClInclude Include="Source\Application\ApplicationStates\GameState.h" />
+    <ClInclude Include="Source\Application\ApplicationStates\HighScoresState.h" />
+    <ClInclude Include="Source\Application\ApplicationStates\LevelChoiceState.h" />
+    <ClInclude Include="Source\Application\ApplicationStates\LoadGameState.h" />
+    <ClInclude Include="Source\Application\ApplicationStates\MainMenuState.h" />
+    <ClInclude Include="Source\Application\ApplicationStates\MenuState.h" />
+    <ClInclude Include="Source\Application\ApplicationStates\NewGameState.h" />
+    <ClInclude Include="Source\Application\ApplicationStates\OptionsState.h" />
+    <ClInclude Include="Source\Application\Level.h" />
+    <ClInclude Include="Source\Application\User.h" />
+    <ClInclude Include="Source\Framework\Audio.h" />
+    <ClInclude Include="Source\Framework\Delegate.h" />
+    <ClInclude Include="Source\Framework\Framework.h" />
+    <ClInclude Include="Source\Framework\Keyboard.h" />
+    <ClInclude Include="Source\Framework\KeyboardListener.h" />
+    <ClInclude Include="Source\Framework\Timer.h" />
+    <ClInclude Include="Source\Game\Background.h" />
+    <ClInclude Include="Source\Game\Bonus.h" />
+    <ClInclude Include="Source\Game\Enemy.h" />
+    <ClInclude Include="Source\Game\Game.h" />
+    <ClInclude Include="Source\Framework\Math.h" />
+    <ClInclude Include="Source\Framework\Messages.h" />
+    <ClInclude Include="Source\Game\Controls.h" />
+    <ClInclude Include="Source\Game\Jumper.h" />
+    <ClInclude Include="Source\Game\Movable.h" />
+    <ClInclude Include="Source\Game\Object.h" />
+    <ClInclude Include="Source\Game\ObjectPair.h" />
+    <ClInclude Include="Source\Game\Platform.h" />
+    <ClInclude Include="Source\Game\Player.h" />
+    <ClInclude Include="Source\Renderer\BitmapFont.h" />
+    <ClInclude Include="Source\Renderer\GraphicsSettings.h" />
+    <ClInclude Include="Source\Renderer\Particles.h" />
+    <ClInclude Include="Source\Renderer\Renderer.h" />
+    <ClInclude Include="Source\Renderer\RendererUser.h" />
+    <ClInclude Include="Source\Renderer\Sprite.h" />
+    <ClInclude Include="Source\Renderer\SurfacesManager.h" />
+    <ClInclude Include="Source\Game\World.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
